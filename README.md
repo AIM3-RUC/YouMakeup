@@ -31,11 +31,13 @@ Cross-model semantic alignment is important in the field of visual and language.
 ![image](https://github.com/AIM3-RUC/YouMakeup/blob/master/images/step_ordering.png)
 
 ### Data Download
-To protect the copyright, both the videos and images should be download after signing the license
+The data license form should be signed before accessing the data. Please sign the form
 ```
-data/License Agreement.pdf
+data/Liscense Agreement.pdf
 ```
-Please sign the license and send it to youmakeupvqa@163.com and we will provide the link of data.
+and send it to youmakeupvqa@163.com and we will provide the link for data download.
+
+
 
 ## Citation
 
