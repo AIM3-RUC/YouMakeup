@@ -1,5 +1,5 @@
 # YouMakeup Dataset
-<img src="https://github.com/AIM3-RUC/YouMakeup/blob/master/images/logo.png" width = "500" height = "100" alt="" align=center />  
+<img src="https://github.com/AIM3-RUC/YouMakeup/blob/master/images/logo.png" width = "500" height = "150" alt="" align=center />  
 
 
 ## Introduction
