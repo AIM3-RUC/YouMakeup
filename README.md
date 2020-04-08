@@ -1,6 +1,9 @@
 # YouMakeup Dataset
+<img src="https://github.com/AIM3-RUC/YouMakeup/blob/master/images/logo.png" width = "500" height = "100" alt="" align=center />  
+
+
 ## Introduction
-YouMakeup is a large-scale multimodal instructional video dataset introduced in [YouMakeup: A Large-Scale Domain-Specific Multimodal Dataset for Fine-Grained Semantic Comprehension](https://www.aclweb.org/anthology/D19-1517/) (*EMNLP2019*).
+YouMakeup is a large-scale multimodal instructional video dataset introduced in [YouMakeup: A Large-Scale Domain-Specific Multimodal Dataset for Fine-Grained Semantic Comprehension](https://www.aclweb.org/anthology/D19-1517/) (*EMNLP2019*). 
 
 It contains 2,800 videos from YouTube, spanning more than 420 hours in total. Each video is annotated with a sequence of steps, including temporal boundaries, grounded facial areas and natural language descriptions of each step.
 
@@ -11,21 +14,28 @@ Makeup activities are fine-grained in nature. Different makeup steps share the s
 
 ![image](https://github.com/AIM3-RUC/YouMakeup/blob/master/images/comparison.png)
 
-## Task
+## CVPR 2020 Workshop: YouMakeup VQA chanllenge
+
+We propose two video question answering tasks in the CVPR 2020 workshop ***Language & Vision with applications to Video Understanding***. The details of the chanllenge are introduced in [CVPR_2020_YouMakeup_VQA_chanllenge](https://languageandvision.github.io/youmakeup_vqa/index.html).
 
 #### Facial Image Ordering
 
-The facial image ordering task is to sort a series of shuffled facial images into the right order according to the ordered step captions. The effect of makeup is the fine-grained changes of facial appearances. Tracking changes on the face is an effective way to evaluate fine-grained comprehension ability.
+As instructional video present steps for accomplishing a certain task, tracking the changes of object after the steps is crucial for procedure understanding. The effects of makeup are fine-grained changes of facial appearances. Therefore, we propose the facial image ordering task, which is to sort a set of facial images from a video into the correct order according to the given step descriptions.
 
 ![image](https://github.com/AIM3-RUC/YouMakeup/blob/master/images/image_ordering.png)
 
 #### Step Ordering
 
-The step ordering task evaluates the capability of sorting a series of step captions into the right order according to the video. This task aims at developing model’s comprehension ability in a multimodal scenario, which calls for a joint understanding across different modalities.
+Cross-model semantic alignment is important in the field of visual and language. In the step ordering task, we ask models to sort a set of step descriptions into the right order as these actions are performed in the video. Models need to align textual step descriptions with corresponding video contents to solve the task. Since the makeup videos contain a sequence of actions and texts are composed of multi-sentences, the task also requires long-term temporal action reasoning and text understanding.
 
 ![image](https://github.com/AIM3-RUC/YouMakeup/blob/master/images/step_ordering.png)
 
-##### These two tasks will be part of the chanllenge tasks for CVPR 2020 workshop ***Language & Vision with applications to Video Understanding***
+### Data Download
+To protect the copyright, both the videos and images should be download after signing the license
+```
+data/License Agreement.pdf
+```
+Please sign the license and send it to youmakeupvqa@163.com and we will provide the link of data.
 
 ## Citation
 
@@ -39,4 +49,6 @@ The step ordering task evaluates the capability of sorting a series of step capt
 }
 ```
 
-If you have any questions, please contact us by wy.wang@ruc.edu.cn
+If you have any questions about YouMakeup dataset, please contact us by wy.wang@ruc.edu.cn.
+
+If you have any questions about the YouMakeup VQA chanllenge, please contact us by youmakeupvqa@163.com 
